@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+const p='components/journey.tsx';let s=fs.readFileSync(p,'utf8');
+s=s.replace("src={img('night/forest')} alt=\"An evening at Zeno Village\"", "src={img('hero/forest')} alt=\"Zeno’s forest canopy, graded into a night atmosphere\"");
+s=s.replace("const message=`Hi Zeno Village", "const message=`Hi Zeno Village");
+s=s.replace("e.preventDefault();if(checkIn<today||!checkIn||!checkOut||checkOut<=checkIn)","e.preventDefault();const data=new FormData(e.currentTarget as HTMLFormElement);const arrival=String(data.get('checkIn')||''),departure=String(data.get('checkOut')||'');if(arrival<today||!arrival||!departure||departure<=arrival)");
+s=s.replace('Check-in: ${checkIn}\\nCheck-out: ${checkOut}', 'Check-in: ${arrival}\\nCheck-out: ${departure}');
+s=s.replace('<input type="date" required min={today}', '<input name="checkIn" type="date" required onInput={e=>setCheckIn(e.currentTarget.value)} min={today}');
+s=s.replace('<input type="date" required min={checkIn?', '<input name="checkOut" type="date" required onInput={e=>setCheckOut(e.currentTarget.value)} min={checkIn?');
+s=s.replace("if(!menu)return;const close=(e:KeyboardEvent)=>{if(e.key==='Escape')setMenu(false)};document.addEventListener('keydown',close);return()=>document.removeEventListener('keydown',close)","if(!menu)return;const before=document.activeElement as HTMLElement;const old=document.body.style.overflow;document.body.style.overflow='hidden';const items=Array.from(document.querySelectorAll<HTMLElement>('.menu-toggle,.mobile-menu a'));items[1]?.focus();const close=(e:KeyboardEvent)=>{if(e.key==='Escape')setMenu(false);if(e.key==='Tab'){const first=items[0],last=items[items.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus()}}};document.addEventListener('keydown',close);return()=>{document.removeEventListener('keydown',close);document.body.style.overflow=old;before?.focus()}");
+fs.writeFileSync(p,s);

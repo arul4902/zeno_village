@@ -1,0 +1,37 @@
+{
+  "source": "https://www.zenovillage.com/",
+  "retrieved": "2026-09-30",
+  "usage": "Official property imagery used for the commissioned Zeno Village redesign; ownership retained by the resort.",
+  "assets": {
+    "hero/canopy": "20230/01JWE7Q2D8DZGS7B1PEA2A1DKK",
+    "stays/lumipod": "40709/01K9PT9D55A1AJZWF20PVVD8MD",
+    "stays/arch": "38434/01K8JK7Y067GHC1YCZTMG4G29J",
+    "stays/stream": "40733/01K9PWDX402XCX520JNX5NHDZV",
+    "stays/aframe": "20198/01JWE0YWRQ5WYF493V38TGNQ8S",
+    "gallery/one": "38428/01K8JHV71JRK4BSJJ2Y5Z2PTWD",
+    "gallery/two": "38573/01K8MFT2PMW27SB92M3DR27QY0",
+    "gallery/three": "20160/01JWDZ89DJHQ2Q7QW4BW03GPW6",
+    "night/forest": "20493/01JWNQWSGTTCDSESCN7SZ046R7",
+    "stays/standard": "38427/01K8JHV1RN7PEPWGSAV76TQ1ZX",
+    "stays/double": "38429/01K8JJA8REFYHVQ6N4NJPJ1QPM",
+    "stays/dorm": "38431/01K8JJQ6HEZQY454T9SWCEC78M",
+    "stays/front": "40719/01K9PV75XH5C7A52D0KWJKH530",
+    "stays/wood": "40754/01K9PZE7D5SCWVA7MYVCB6JHC0",
+    "stays/rock": "20495/01JWNSE5G3DEMW90PGJB0BGXD9",
+    "hero/forest": "38425/01K8JFP9M92M05MF18K3Z7VYWC",
+    "about/bridge": "https://d2gx18f76jq9dw.cloudfront.net/81633/900-kandi-glass-bridge-park-yks5i9tu.jpg",
+    "about/falls": "https://d2gx18f76jq9dw.cloudfront.net/81634/soochipara-falls-l4f50dmx.jpg",
+    "about/chembra": "https://d2gx18f76jq9dw.cloudfront.net/81631/chembra-peak-z6xi9vlo.jpg",
+    "experiences/jeep": "https://d2gx18f76jq9dw.cloudfront.net/18553/01JVKR4NYHH3F06GZH2Q8VHY6V.jpg",
+    "experiences/dining": "https://d2gx18f76jq9dw.cloudfront.net/18524/01JVKQH8E1GCAR0BBFTQ9WQEK8.jpg"
+  },
+  "formats": "WebP derivatives resized to a maximum of 1800 × 1600; original photographs retained locally.",
+  "excluded": {
+    "night/campfire": "Official marketing image: not verified as real property photography; not used.",
+    "experiences/trekking": "Official marketing image: not verified as real property photography; not used."
+  },
+  "notes": {
+    "night/forest": "Earlier asset name describes a plunge-pool photo; not used in night scene.",
+    "hero/canopy": "Riverside trekking photograph used for the journey and atmosphere."
+  }
+}

@@ -1,0 +1,194 @@
+<!-- layouts/base.blade.php -->
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Forbidden</title>
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="https://www.zotel.ai/assets/css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://www.zotel.ai/assets/css/animate.css"/>
+    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preload" as="style" href="https://www.zotel.ai/build/assets/app-C8Y3KJnl.css" /><link rel="stylesheet" href="https://www.zotel.ai/build/assets/app-C8Y3KJnl.css" data-navigate-track="reload" />    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <style>
+    :root {
+        --home-bg: #ffffff;
+        --home-ink: #11231a;
+        --home-muted: #5c6b63;
+        --home-line: rgba(17, 35, 26, 0.08);
+        --home-card: rgba(255, 255, 255, 0.88);
+        --home-green: #34d399;
+        --home-green-soft: #ecfdf5;
+        --home-green-mist: rgba(52, 211, 153, 0.12);
+        --home-green-line: rgba(52, 211, 153, 0.22);
+        --home-green-deep: #0f5c3d;
+        --home-dark: #0f172a;
+        --brand-anchor-offset: 84px;
+    }
+
+    .marketing-home {
+        background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+        color: var(--home-ink);
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .marketing-anchor-section {
+        scroll-margin-top: var(--brand-anchor-offset);
+    }
+
+    .marketing-nav {
+        /* No backdrop-filter here: it traps position:fixed (mobile drawer) and can clip absolute dropdowns. */
+        background: rgba(255, 255, 255, 0.94);
+        border-bottom: 1px solid rgba(17, 35, 26, 0.06);
+        overflow: visible;
+    }
+
+    /* Mobile slide-over drawer (see brand header) */
+    .marketing-nav-backdrop {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .marketing-nav-backdrop.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .marketing-nav-drawer {
+        transform: translateX(100%);
+        pointer-events: none;
+        transition: transform 0.32s cubic-bezier(0.32, 0.72, 0, 1);
+        will-change: transform;
+    }
+
+    .marketing-nav-drawer.is-open {
+        transform: translateX(0);
+        pointer-events: auto;
+    }
+
+    .marketing-menu-link {
+        display: block;
+        border-radius: 0.75rem;
+        padding: 0.75rem 0.9rem;
+        color: var(--home-ink);
+        transition: background-color 180ms ease, color 180ms ease;
+    }
+
+    .marketing-menu-link:hover {
+        background: rgba(47, 198, 127, 0.08);
+        color: var(--home-green-deep);
+    }
+
+    .marketing-menu-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.9rem;
+        height: 2.9rem;
+        border-radius: 9999px;
+        border: 1px solid rgba(17, 35, 26, 0.12);
+        background: rgba(255, 255, 255, 0.88);
+        color: var(--home-ink);
+        transition: border-color 180ms ease, background-color 180ms ease, color 180ms ease;
+    }
+
+    .marketing-menu-button:hover {
+        border-color: rgba(17, 35, 26, 0.22);
+        background: rgba(255, 255, 255, 1);
+    }
+
+    .marketing-button {
+        transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+    }
+
+    .marketing-button:hover {
+        transform: translateY(-1px);
+    }
+
+    .marketing-logo-mark {
+        box-shadow: 0 6px 14px rgba(15, 92, 61, 0.16);
+    }
+
+    /* Desktop Products dropdown: keep open when toggled (touch / click) */
+    .nav-products-dropdown.nav-products-dropdown--open {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    details[data-mobile-nav-products][open] summary .nav-mobile-chevron {
+        transform: rotate(180deg);
+    }
+</style>
+
+    <meta name="csrf-token" content="aKnJGCh7A0RjVWnms4rQBtILEOm1VKrEAMZ6H0YT">
+
+    <!-- Environment-based Favicon -->
+            <link rel="icon" href="https://www.zotel.ai/favicon_green.ico" type="image/x-icon">
+    
+</head>
+<body>
+
+        
+    <div class="min-h-[80vh] bg-gray-50 flex flex-col items-center justify-center px-6 py-12">
+        <div class="max-w-md text-center">
+            <h1 class="text-7xl font-extrabold text-red-600 mb-4">403</h1>
+            <p class="text-2xl font-semibold text-gray-800 mb-2">Access Denied</p>
+            <p class="text-gray-600 mb-6">You do not have permission to access this page. Please check your access rights or
+                contact the administrator.</p>
+            <div class="flex justify-center space-x-4">
+                                    <a
+            href="https://www.zotel.ai"
+                    class="fi-btn fi-size-md"
+>
+                        <svg class="fi-icon fi-size-md" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"/>
+</svg>
+        
+        
+            
+                        Go back
+            
+    
+    
+    </a>
+                                <a
+            href="https://www.zotel.ai"
+                    class="fi-color fi-color-primary fi-bg-color-400 hover:fi-bg-color-300 dark:fi-bg-color-600 dark:hover:fi-bg-color-500 fi-text-color-900 hover:fi-text-color-800 dark:fi-text-color-950 dark:hover:fi-text-color-950 fi-btn fi-size-md  bg-green-400 text-white"
+>
+                        <svg class="fi-icon fi-size-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z"/>
+  <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z"/>
+</svg>
+        
+        
+            
+                        Home
+            
+    
+    
+    </a>
+            </div>
+        </div>
+    </div>
+
+     <!-- The main content will be injected here -->
+
+<!-- Common Scripts -->
+<script src="https://www.zotel.ai/assets/js/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+<script src="https://www.zotel.ai/js/social-login.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
